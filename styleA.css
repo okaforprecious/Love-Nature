@@ -3,6 +3,17 @@
   padding: 0;
   box-sizing: border-box;
 }
+@font-face {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(/fonts.gstatic.com/s/dmsans/v15/rP2Yp2ywxg089UriI5-g4vlH9VoD8Cmcqbu6-K6h9Q.woff2)
+    format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF,
+    U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020,
+    U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 
 .nav-section {
   display: flex;
@@ -49,7 +60,7 @@
       rgba(0, 0, 0, 0.146)
     ),
     url("IMG-20250429-WA0019.jpg");
-  height: 100vh;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -60,15 +71,18 @@
 }
 
 .hero-section h3 {
-  font-size: 50px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
   margin-right: 20px;
   margin-top: 10px;
 }
 
 .hero-section h1 {
-  font-size: 120px;
+  font-family: "DM Sans", sans-serif;
+  font-size: 110px;
 }
-.hero-section h4 {
+.hero-section p {
+  font-family: "DM Sans", sans-serif;
   font-size: large;
 }
 .hero-section div button {
@@ -80,21 +94,21 @@
   border-color: transparent;
 }
 .hero-section div button:hover {
-  background-color: rgb(229, 255, 0);
+  background-color: rgba(216, 160, 7, 0.89);
 }
 
 .service-section h1 {
+  font-family: "DM Sans", sans-serif;
   font-size: 40px;
   color: rgba(61, 99, 3, 0.671);
   margin-top: 60px;
-  border-style: ridge;
-  border-width: 5px;
   justify-items: center;
-  border-color: yellow;
-  border-top: none;
-  border-left: none;
-  border-right: none;
   text-align: center;
+}
+.divider {
+  border-bottom: 3px solid rgb(255, 217, 54);
+  width: 7%;
+  margin: 22px auto;
 }
 
 .service-flex {
@@ -122,6 +136,9 @@
   height: 80vh;
   align-content: center;
 }
+.quote-section img {
+  margin-bottom: 30px;
+}
 .quote-section h2 {
   font-size: xx-large;
   color: rgba(61, 99, 3, 0.671);
@@ -143,6 +160,7 @@
   justify-content: space-around;
 }
 .about-us-section p {
+  font-family: "DM Sans";
   font-size: large;
   color: rgba(61, 99, 3, 0.671);
   margin-bottom: 20px;
@@ -171,6 +189,7 @@
   align-content: center;
 }
 .question-section h1 {
+  font-family: "DM Sans", sans-serif;
   font-size: 50px;
   color: rgba(61, 99, 3, 0.671);
   margin-bottom: 30px;
@@ -242,6 +261,18 @@
   .about-us-section div button {
     margin-bottom: 50px;
   }
+  .nav-section div i {
+    display: grid;
+    color: white;
+    background-color: rgb(255, 218, 115);
+    width: 47px;
+    height: 47px;
+    border-radius: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-right: 20px;
+  }
 }
 @media (max-width: 834px) {
   .nav-section div img {
@@ -287,6 +318,12 @@
 @media (max-width: 768px) {
   .about-us-section div img {
     display: none;
+  }
+  .hero-section {
+    height: 45vh;
+  }
+  .hero-section p {
+    font-size: small;
   }
 }
 
